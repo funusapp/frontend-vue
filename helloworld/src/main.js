@@ -1,4 +1,12 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
 
-createApp(App).mount('#app')
+createApp({
+  render () {
+    return (
+      <header>
+        <h1>Titulo do post</h1>
+        <p>Conteudo da postagem</p>
+      </header>
+    );
+  }
+}).mount('#app');
